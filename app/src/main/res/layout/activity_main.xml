@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sachin.sachinshrestha.databasemgmt.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/tvName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Surname"
+        android:id="@+id/tvSurname"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Marks"
+        android:id="@+id/tvMarks"
+        android:layout_below="@+id/tvSurname"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID"
+        android:layout_below="@id/tvMarks"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@id/tvName"
+        android:hint="name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSurname"
+        android:layout_below="@+id/etName"
+        android:layout_alignRight="@id/tvSurname"
+        android:layout_alignParentEnd="true"
+        android:hint="surname"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMarks"
+        android:layout_below="@+id/etSurname"
+        android:layout_alignRight="@id/tvMarks"
+        android:layout_alignParentEnd="true"
+        android:hint="marks" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMarks"
+        android:layout_alignParentEnd="true"
+        android:hint="ID" />
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD DATA"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnGetData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddData"
+        android:layout_centerHorizontal="true"
+        android:text="GET DATA"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_below="@id/btnGetData"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:text="DELETE"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
